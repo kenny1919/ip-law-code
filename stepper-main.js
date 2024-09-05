@@ -136,7 +136,7 @@ nextButtons.forEach(button => {
 
                                     // Check if this is the last step with `slider-wized-request` in the journey path
                                     if (!nextHiddenStepper.hasAttribute('slider-wized-request') || currentJourneyPath[currentJourneyPath.length - 1] === nextHiddenStepper.getAttribute('slider-identifier')) {
-                                        const navigationWrapper = document.querySelector('[wized="demo_navigation_wrapper"]');
+                                        const navigationWrapper = document.querySelector('[wized="demo_stepNavigation_wrapper"]');
                                         if (navigationWrapper) {
                                             navigationWrapper.classList.add('is-hidden');
                                         }
